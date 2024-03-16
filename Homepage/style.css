@@ -1,0 +1,11 @@
+        .section-header {
+            color: #738493;
+        }
+        .card {
+            background-color:  #1B2A41#0C1821;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .card:hover {
+            background-color: #0C1821;
+        }
