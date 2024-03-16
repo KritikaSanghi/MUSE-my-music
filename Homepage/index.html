@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Interactive Music Player</title>
+    <style>
+        .section-header {
+            color: #738493;
+        }
+        .card {
+            background-color:  #1B2A41#0C1821;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .card:hover {
+            background-color: #0C1821;
+        }
+    </style>
+    <script src="play_pause.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Welcome Header -->
+    <header class="py-4 px-8 content-header mb-12">
+        <h2 class="text-4xl font-bold flex justify-center">Welcome to Music Web Player</h2>
+        <p class="text-gray-400 flex justify-center">Discover, stream, and share a constantly expanding mix of music from emerging and major artists around the world.</p>
+    </header>
+    <!-- Navbar -->
+    <nav class="py-4 px-8 flex justify-center">
+        <ul class="flex space-x-8">
+            <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Browse</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Your Library</a></li>
+        </ul>
+    </nav>
+
+    <!-- Recently Played Albums -->
+    <section class="py-8 mb-12">
+        <!-- Display recently played albums in a two-column layout -->
+        <h3 class="section-header text-2xl font-bold mb-6">Top Charts</h3>
+        <!-- Example: Album cards -->
+        <div class="grid grid-cols-3 gap-4">
+            <!-- Album card 1 -->
+            <div class="card flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                <!-- Album Cover (on the right) -->
+                <img src="album1.jpeg" alt="Album 1" class="w-16 h-16 rounded-md">
+                <!-- Album Details (on the left) -->
+                <div class="ml-4 text-left">
+                    <p class="text-lg font-semibold">Album Title 1</p>
+                    <p class="text-sm text-gray-400">Artist Name</p>
+                </div>
+            </div>
+            <!-- Repeat for other albums -->
+            <div class="card flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                <!-- Album Cover (on the right) -->
+                <img src="album1.jpeg" alt="Album 1" class="w-16 h-16 rounded-md">
+                <!-- Album Details (on the left) -->
+                <div class="ml-4 text-left">
+                    <p class="text-lg font-semibold">Album Title 1</p>
+                    <p class="text-sm text-gray-400">Artist Name</p>
+                </div>
+            </div>
+            <div class="card flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                <!-- Album Cover (on the right) -->
+                <img src="album1.jpeg" alt="Album 1" class="w-16 h-16 rounded-md">
+                <!-- Album Details (on the left) -->
+                <div class="ml-4 text-left">
+                    <p class="text-lg font-semibold">Album Title 1</p>
+                    <p class="text-sm text-gray-400">Artist Name</p>
+                </div>
+            </div>
+            <div class="card flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                <!-- Album Cover (on the right) -->
+                <img src="album1.jpeg" alt="Album 1" class="w-16 h-16 rounded-md">
+                <!-- Album Details (on the left) -->
+                <div class="ml-4 text-left">
+                    <p class="text-lg font-semibold">Album Title 1</p>
+                    <p class="text-sm text-gray-400">Artist Name</p>
+                </div>
+            </div>
+            <div class="card flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                <!-- Album Cover (on the right) -->
+                <img src="album1.jpeg" alt="Album 1" class="w-16 h-16 rounded-md">
+                <!-- Album Details (on the left) -->
+                <div class="ml-4 text-left">
+                    <p class="text-lg font-semibold">Album Title 1</p>
+                    <p class="text-sm text-gray-400">Artist Name</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Picks (Songs) -->
+    <!-- Horizontal overflow list of popular songs -->
+
+    <!-- Latest Releases (Albums and Songs) -->
+    <!-- Horizontal overflow list for new releases -->
+    <section class="mb-12">
+        <h3 class="section-header text-2xl font-bold mb-6">Latest Releases</h3>
+<div class="inline-flex flex-nowrap overflow-hidden">
+    <div class="grid grid-cols-4 gap-6 flex overflow-x-auto">
+    <!-- Album Card 1 -->
+    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll gap-10">
+        <li>
+        <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+           <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+           <div class="p-4">
+               <p class="text-sm font-semibold">Album Title 1</p>
+               <p class="text-sm text-gray-400">Artist Name</p>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+               <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+               <div class="p-4">
+                   <p class="text-sm font-semibold">Album Title 1</p>
+                   <p class="text-sm text-gray-400">Artist Name</p>
+                </div>
+            </div>
+            </li>
+            <li>
+                <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                   <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                   <div class="p-4">
+                       <p class="text-sm font-semibold">Album Title 1</p>
+                       <p class="text-sm text-gray-400">Artist Name</p>
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                       <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                       <div class="p-4">
+                           <p class="text-sm font-semibold">Album Title 1</p>
+                           <p class="text-sm text-gray-400">Artist Name</p>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                           <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                           <div class="p-4">
+                               <p class="text-sm font-semibold">Album Title 1</p>
+                               <p class="text-sm text-gray-400">Artist Name</p>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                               <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                               <div class="p-4">
+                                   <p class="text-sm font-semibold">Album Title 1</p>
+                                   <p class="text-sm text-gray-400">Artist Name</p>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                                   <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                                   <div class="p-4">
+                                       <p class="text-sm font-semibold">Album Title 1</p>
+                                       <p class="text-sm text-gray-400">Artist Name</p>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                                       <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                                       <div class="p-4">
+                                           <p class="text-sm font-semibold">Album Title 1</p>
+                                           <p class="text-sm text-gray-400">Artist Name</p>
+                                        </div>
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                                           <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                                           <div class="p-4">
+                                               <p class="text-sm font-semibold">Album Title 1</p>
+                                               <p class="text-sm text-gray-400">Artist Name</p>
+                                            </div>
+                                        </div>
+                                        </li>
+                                        <li>
+                                            <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                                               <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                                               <div class="p-4">
+                                                   <p class="text-sm font-semibold">Album Title 1</p>
+                                                   <p class="text-sm text-gray-400">Artist Name</p>
+                                                </div>
+                                            </div>
+                                            </li>
+    </ul>
+    </div>    
+         
+    </div>
+        
+</div>
+    </section>
+
+    <!-- Top Charts Section -->
+    <!-- Globally trending albums and songs -->
+    <section class="mb-12">
+        <h3 class="section-header text-2xl font-bold mb-6">Top Charts</h3>
+<div class="inline-flex flex-nowrap overflow-hidden">
+    <div class="grid grid-cols-4 gap-6 flex overflow-x-auto">
+    <!-- Album Card 1 -->
+    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll gap-10">
+        <li>
+        <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+           <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+           <div class="p-4">
+               <p class="text-sm font-semibold">Album Title 1</p>
+               <p class="text-sm text-gray-400">Artist Name</p>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+               <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+               <div class="p-4">
+                   <p class="text-sm font-semibold">Album Title 1</p>
+                   <p class="text-sm text-gray-400">Artist Name</p>
+                </div>
+            </div>
+            </li>
+            <li>
+                <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                   <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                   <div class="p-4">
+                       <p class="text-sm font-semibold">Album Title 1</p>
+                       <p class="text-sm text-gray-400">Artist Name</p>
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                       <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                       <div class="p-4">
+                           <p class="text-sm font-semibold">Album Title 1</p>
+                           <p class="text-sm text-gray-400">Artist Name</p>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                           <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                           <div class="p-4">
+                               <p class="text-sm font-semibold">Album Title 1</p>
+                               <p class="text-sm text-gray-400">Artist Name</p>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                               <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                               <div class="p-4">
+                                   <p class="text-sm font-semibold">Album Title 1</p>
+                                   <p class="text-sm text-gray-400">Artist Name</p>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                                   <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                                   <div class="p-4">
+                                       <p class="text-sm font-semibold">Album Title 1</p>
+                                       <p class="text-sm text-gray-400">Artist Name</p>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                                       <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                                       <div class="p-4">
+                                           <p class="text-sm font-semibold">Album Title 1</p>
+                                           <p class="text-sm text-gray-400">Artist Name</p>
+                                        </div>
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                                           <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                                           <div class="p-4">
+                                               <p class="text-sm font-semibold">Album Title 1</p>
+                                               <p class="text-sm text-gray-400">Artist Name</p>
+                                            </div>
+                                        </div>
+                                        </li>
+                                        <li>
+                                            <div class="w-40 hover:bg-gray-800 rounded-lg shadow-md">
+                                               <img src="album1.jpeg" alt="Album 1" class="w-full h-40 rounded-t-lg">
+                                               <div class="p-4">
+                                                   <p class="text-sm font-semibold">Album Title 1</p>
+                                                   <p class="text-sm text-gray-400">Artist Name</p>
+                                                </div>
+                                            </div>
+                                            </li>
+    </ul>
+    </div>    
+         
+    </div>
+        
+</div>
+    </section>
+
+
+    <!-- Artist Section -->
+    <!-- Display user-preferred artists -->
+
+    <!-- Music Player -->
+    <section>
+    <div class="fixed bottom-0 left-0 w-full bg-gray-800 p-2 flex items-center justify-between">
+        <!-- Album Cover (on the left) -->
+        
+        <div class=" overflow-hidden flex items-center justify-center">
+            <img src="album1.jpeg" alt="Album 1" class="w-12 h-12 object-cover">
+            <!-- Album Title and Artist (in the center) -->
+        <div class="ml-2">
+            <p class="text-xs font-semibold">Album Title 1</p>
+            <p class="text-xs text-gray-400">Artist Name</p>
+        </div>
+        </div>
+
+        
+
+        <!-- Music Controls (in the middle) -->
+        <div class="flex items-center space-x-4">
+            <button class="text-white hover:text-gray-300">
+                <!-- Previous track button icon (replace with actual icon) -->
+                ⏮️
+            </button>
+            <button id="playPauseButton" class="text-white hover:text-gray-300 transform hover:scale-105 transition-transform" id="playPauseButton">
+                <!-- Play button icon (replace with actual icon) -->
+                ▶️
+            </button>
+            <button class="text-white hover:text-gray-300">
+                <!-- Next track button icon (replace with actual icon) -->
+                ⏭️
+            </button>
+        </div>
+
+        <!-- Volume control slider (on the right) -->
+        <input type="range" class="w-24 h-2 bg-gray-600" min="0" max="100" value="50">
+    </div>
+    </section>
+    
+    
+</body>
+</html>
