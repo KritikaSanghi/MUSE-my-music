@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Music Genres</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+        }
+        .navbar {
+            background-color: #0C1821;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: -250px; /* Start off-screen */
+            width: 250px;
+            height: 100%;
+            z-index: 1;
+            transition: 0.3s; /* Smooth transition */
+        }
+        .navbar a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #324A5F;
+        }
+        .menu-icon {
+            cursor: pointer;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            font-size: 30px;
+            color: white;
+            z-index: 2;
+        }
+        .main-content {
+            transition: margin-left .5s; /* Smooth transition for main content */
+            padding: 20px;
+        }
+        .main-content.margin-left {
+            margin-left: 250px;
+        }
+        .genre-card {
+            background-color: #0C1821;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .genre-card:hover {
+            background-color: #1B2A41;
+        }
+        .genre-title {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div id="myNavbar" class="navbar">
+    <a href="index.html">Home</a>
+    <a href="browse.html">Browse</a>
+    <a href="#">Radio</a>
+    <!-- Add other navbar links here -->
+</div>
+
+<div class="main-content" id="main">
+    <span class="menu-icon" onclick="toggleNavbar()">☰</span>
+    <h1 class="text-4xl font-bold mb-8" style="color:#738493">Browse Genres</h1>
+
+    <!-- Genres Grid -->
+    <div class="grid grid-cols-3 gap-6">
+        <!-- Genre Card for Rock -->
+        <div class="genre-card p-6">
+            <h2 class="genre-title text-2xl font-semibold mb-4">Rock</h2>
+            <p style="color:#324A5F">Explore classic rock, alternative rock, indie rock, and more.</p>
+        </div>
+        <!-- Genre Card for Jazz -->
+        <div class="genre-card p-6">
+            <h2 class="genre-title text-2xl font-semibold mb-4">Jazz</h2>
+            <p style="color:#324A5F">Dive into smooth jazz, bebop, modern jazz, and more.</p>
+        </div>
+        <!-- Add more genre cards as needed -->
+    </div>
+</div>
+
+<script>
+function toggleNavbar() {
+    var navbar = document.getElementById("myNavbar");
+    var main = document.getElementById("main");
+    if (navbar.style.left === '-250px') {
+        navbar.style.left = '0';
+        main.classList.add("margin-left");
+    } else {
+        navbar.style.left = '-250px';
+        main.classList.remove("margin-left");
+    }
+}
+</script>
+
+</body>
+</html>
