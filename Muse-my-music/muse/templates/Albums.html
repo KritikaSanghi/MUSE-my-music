@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Music Library</title>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar (identical to the homepage) -->
+    <nav class="bg-gray-800 p-4 flex justify-center">
+        <div class="flex space-x-4">
+            <a href="/home" class="text-gray-400 hover:text-white">Home</a>
+            <a href="/search" class="text-gray-400 hover:text-white">Browse</a>
+            <a href="/library" class="text-gray-400 hover:text-white">Your Library</a>
+        </div>
+    </nav>
+    <nav class="py-4 px-8 flex justify-between">
+        <div class="flex space-x-10">
+            <a href="{%url 'playlists:home' %}" class="hover:text-gray-300">Playlists</a>
+            <a href="{%url 'playlists:Albums' %}" class="hover:text-gray-300">Albums</a>
+            <a href="{%url 'playlists:Artists' %}" class="hover:text-gray-300">Artists</a>
+        </div>
+    </nav>
+    <hr>
+    <!-- Content -->
+    <div class="container mi-8 py-8">
+        <!-- Albums Section -->
+        <section id="albums" class="mt-8 ml-8">
+            <h2 class="text-xl font-bold mb-4">Albums</h2>
+            <div class="flex flex-col space-y-4">
+                
+                <!-- Album Item 1 -->
+                <div class="flex items-center">
+                    <div class="w-16 h-16 bg-gray-700 rounded-md"></div>
+                    <p class="ml-4 text-2xl">Album Name</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-16 h-16 bg-gray-700 rounded-md"></div>
+                    <p class="ml-4 text-2xl">Album Name</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-16 h-16 bg-gray-700 rounded-md"></div>
+                    <p class="ml-4 text-2xl">Album Name</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-16 h-16 bg-gray-700 rounded-md"></div>
+                    <p class="ml-4 text-2xl">Album Name</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-16 h-16 bg-gray-700 rounded-md"></div>
+                    <p class="ml-4 text-2xl">Album Name</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-16 h-16 bg-gray-700 rounded-md"></div>
+                    <p class="ml-4 text-2xl">Album Name</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
